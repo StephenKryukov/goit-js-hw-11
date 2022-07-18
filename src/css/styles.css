@@ -16,6 +16,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  margin: 0;
 }
 
 .header {
@@ -40,6 +41,8 @@ body {
   font-size: 20px;
   border-radius: 6px;
   border: 0;
+  padding-left: 15px;
+  outline: none;
 }
 .button {
   position: absolute;
