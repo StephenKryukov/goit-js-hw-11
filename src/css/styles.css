@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #360988;
+  background: linear-gradient(45deg, #30cfd0, #330867);
 }
 
 .search-form {
@@ -38,6 +38,8 @@ body {
   height: 40px;
   width: 400px;
   font-size: 20px;
+  border-radius: 6px;
+  border: 0;
 }
 .button {
   position: absolute;
@@ -47,9 +49,9 @@ body {
   width: 40px;
   height: 40px;
   left: calc(50% + 160px);
-  background-color: #0000ff;
+  background-color: #aaaaaa;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0 6px 6px 0;
   cursor: pointer;
   padding: 0;
 }
@@ -60,7 +62,9 @@ body {
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .icon {
@@ -102,13 +106,12 @@ body {
 }
 
 .photo-card {
-  width: calc((100% - 36px)/4);
+  width: calc((100% - 36px) / 4);
   display: flex;
   flex-direction: column;
   text-decoration: none;
   color: #212121;
-  box-shadow: 3px 3px 3px #aaaaaa,
-             -3px 3px 3px #aaaaaa;
+  box-shadow: 3px 3px 3px #aaaaaa, -3px 3px 3px #aaaaaa;
 }
 
 .info {
